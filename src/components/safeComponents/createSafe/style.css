@@ -1,0 +1,64 @@
+.form-header {
+    flex-direction: column;
+    display: flex;
+    grid-gap: 10px;
+    gap: 10px;
+    padding: 1rem;
+}
+form.create-safe {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    grid-gap: .5rem;
+    gap: .5rem;
+    width: 100%;
+}
+.input {
+    height: 2rem;
+}
+select.Type {
+    height: 3rem;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .8rem;
+    font-size: .8rem;
+    font-weight: bold;
+    border: none;
+    color: #e20074;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #e20074;
+    color: white;
+}
+
+.create-new-safe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.form-description {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

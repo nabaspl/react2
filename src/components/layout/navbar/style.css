@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-right, .nav-left {
+    display: flex;
+}
+ul.nav-menu {
+    display: flex;
+    list-style: none;
+}
+.nav-menu li.active {
+    background-image: linear-gradient(to top, #72134b, #1d212c);
+}
+.nav-menu li {
+    padding: 20px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

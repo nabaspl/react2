@@ -1,0 +1,35 @@
+.safes-list-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+ul.safe-lists {
+    display: flex;
+    flex-direction: column;
+}
+li.safes {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+    padding: .5rem;
+    justify-content: space-between;
+}
+.safes:hover {
+    background-image: linear-gradient(to right, #72134b, #1d212c);
+}
+p.safe-infos {
+    font-size: .8rem;
+    color: #c4c4c4;
+}
+.safe-data {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+img.icon-edit,img.icon-delete {
+    padding: 10px;
+}
