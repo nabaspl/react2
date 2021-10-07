@@ -3,12 +3,15 @@ import './style.css'
 import CreateBtn from './createBtn';
 import Modal from '../../modal/modal';
 import computerImage from '../../../assets/images/computerImage.svg';
+import Form from './form'
 class CreateSafe extends React.Component {
     render() { 
         return <div className="create-new-safe">
             {this.renderIcon(this.props.isIcon)}
             <CreateBtn onClickHandler={this.handleOpenModal}/>
-            <Modal/>
+            <Modal>
+                <Form/>
+            </Modal>
         </div>;
     }
     renderIcon(s){

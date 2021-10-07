@@ -3,14 +3,15 @@ import './style.css'
 import Form from '../safeComponents/createSafe/form';
 import safeIcon from '../../assets/images/safeIcon.svg';
 import {useSelector} from 'react-redux'
-function Modal(){
+function Modal(props){
         
 
         return (<div id="myModal" className="modal">
         <div className="modal-content">
             
                 {renderModalHeader()}
-                <Form/>
+                {props.children}
+                
         </div>
     </div>);
     
