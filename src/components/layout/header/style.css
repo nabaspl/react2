@@ -3,7 +3,6 @@ header {
     justify-content: center;
     background-image: linear-gradient(to top, #2f3545, #1d212c);
     color: white;
-    font-weight: bold;
     height: 10vh;
 }
 .header-wrapper {

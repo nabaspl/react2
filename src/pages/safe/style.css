@@ -14,8 +14,9 @@ main.main-content {
 .aside-top{
     display: flex;
     padding: 10px;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #20232e;
     height: 6%;
+    justify-content: space-between;
 }
 .aside-body {
     height: calc(94% - 20px);
@@ -94,4 +95,30 @@ button.create-new-secret {
     color: white;
     border: none;
     padding: 7px 20px;
+}
+
+.section-info {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-info h1{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+}
+.section-info p{
+    font-family: Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c4c4c4;
 }

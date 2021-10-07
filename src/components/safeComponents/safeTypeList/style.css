@@ -1,6 +1,7 @@
 .safe-list-wrapper {
-    width: 33%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Roboto;
 }

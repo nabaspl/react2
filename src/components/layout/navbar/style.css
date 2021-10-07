@@ -19,3 +19,10 @@ ul.nav-menu {
     display: flex;
     align-items: center;
 }
+.nav-menu li:hover {
+    background-image: linear-gradient(to top, #72134b, #1d212c);
+}
+a {
+    text-decoration: none;
+    color: white;
+}

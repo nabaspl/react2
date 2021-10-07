@@ -8,16 +8,16 @@ import CreateSafe from '../../components/safeComponents/createSafe/createSafe';
 import {SafeLists} from '../../components/safeComponents/safeList/safeLists.js';
 import { Fragment } from 'react/cjs/react.production.min';
 
-import bannerImage  from '../../components/assets/images/bannerImage.svg'
-import addFolderIcon  from '../../components/assets/images/addFolderIcon.svg'
-import secretsLockerImage  from '../../components/assets/images/secretsLockerImage.svg'
+import bannerImage  from '../../assets/images/bannerImage.svg'
+import addFolderIcon  from '../../assets/images/addFolderIcon.svg'
+import secretsLockerImage  from '../../assets/images/secretsLockerImage.svg'
 import {useSelector} from 'react-redux'
-
-
+import store from '../../redux/store';
+import {createSecret} from '../../redux/safe/actions'
 
 export default function Safe(){ 
     const safeLists = useSelector((state) => state.SafeReducer.safes)
-    
+    store.dispatch(createSecret(safeLists));
         return <main className="main-content">
             <div className="main-wrapper">
                 <Aside value={renderAside(safeLists)}/>
@@ -40,7 +40,8 @@ export default function Safe(){
                 {safeLists.map((safe,index) => 
                         <SafeLists 
                         key={index} 
-                        index={index} 
+                        index={index}
+                        safeId={safe.id}  
                         safeName={safe.safeName} 
                         safeDesc={safe.safeDescription}
                         isSelected={safe.isSelected}
@@ -57,6 +58,10 @@ export default function Safe(){
         return  <div className="section-wrapper">
                 <div className="banner-image-container">
                     <img src={bannerImage} className="banner-img"/>
+                    <div className="section-info">
+                        <h1>No Safes Created Yet</h1>
+                        <p>Create a Safe to see your secrets, folders and permissions here</p>
+                    </div>
                 </div>
                 <section className="secret-section">
                     <div className="panel">

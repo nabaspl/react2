@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
 class NavList extends React.Component {
     render() { 
+        const vaultName = 'John Doe'
         return <ul className="nav-menu">
-            <li className="active"><a>Safes</a></li>
-            <li><a>Vault AppRoles</a></li>
-            <li><a>Service Accounts</a></li>
-            <li><a>IAM Service Accounts</a></li>
-            <li><a>Azure Active Directory</a></li>
+            <li className="active"><Link to="/">Safes</Link></li>
+            <li><Link to={`/vault/${vaultName}`}>Vault AppRoles</Link></li>
+            <li><Link to="/service">Service Accounts</Link></li>
+            <li><Link to="/iam">IAM Service Accounts</Link></li>
+            <li><Link to="/azure">Azure Active Directory</Link></li>
             </ul>;
     }
 }

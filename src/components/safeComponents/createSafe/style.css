@@ -52,7 +52,7 @@ select.Type {
 .create-new-safe {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
     align-items: center;
 }
@@ -61,4 +61,16 @@ select.Type {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.computer-icon{
+        width: 40%;
+        height: 40%;
+}
+.create-new-btn{
+        width: 15%;
+        height: 15%;
+}
+.create-safe-info{
+    font-size: .7rem;
+    color: #c4c4c4;
 }

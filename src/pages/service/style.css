@@ -1,0 +1,13 @@
+main.main-content {
+    background-image: linear-gradient(to top, #2f3545, #1d212c);
+    height: calc(100vh - 10vh);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.main-wrapper {
+    height: 90%;
+    width: 80%;
+    display: flex;
+}
